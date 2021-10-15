@@ -1,0 +1,24 @@
+#!/bin/bash
+main()
+{
+echo "----------------------"
+echo " Script de convertion "
+echo " Année -> jours/heures"
+echo "----------------------"
+echo "Nombre d'année :"
+echo " . . ."
+}
+clear
+main
+read vvv
+clear
+let a=(365*$vvv)
+let b=(8760*$vvv)
+let c=(525600*$vvv)
+let d=(31536000*$vvv)
+echo "-----------------" $vvv"ans ----------------" 
+echo "---------------------------------------------"
+echo "Soit" $a "jours avec un total de" $b "heures"
+echo "---------------------------------------------"
+echo "Aussi égale à" $c "minutes ou" $d "secondes"
+echo "---------------------------------------------"
